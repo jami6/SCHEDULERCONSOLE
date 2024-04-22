@@ -12,10 +12,7 @@ public class Recurring:ITimeScheduler
         {
                 Console.WriteLine("Recurring Set");
                 Console.WriteLine("Enter Start Date(DD/MM/YY):");
-                var confDateTime = Console.ReadLine();
-    
-                Console.WriteLine("Enter Description");
-                var description = Console.ReadLine();
+                var confStartDate = Console.ReadLine();
     
                 Console.WriteLine("Enter Day Occurence");
                 Console.WriteLine("1.Daily\n2.Weekly\n3.Monthly");
@@ -36,9 +33,9 @@ public class Recurring:ITimeScheduler
                                 break;
                 }
                 
-                var formatedDate = DateHelpers.ReturnFormatedDateFromString(confDateTime);
+                var formatedDate = DateHelpers.ReturnFormatedDateFromString(confStartDate);
                 Console.WriteLine($"Output\nNext Execution Date -> {DateOnly.FromDateTime(CurrentDate.AddDays(interval))}");
-                Console.WriteLine($"Description: {description}");
+                Console.WriteLine($"Description: Schedule will be used starting on {confStartDate}");
         }
 
 }
