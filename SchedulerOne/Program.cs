@@ -1,29 +1,20 @@
 ﻿
-using SchedulerOne.SchedulerClasses;
+using SchedulerOne;
 
-Console.WriteLine("************** DATE SCHEDULER ********************");
-
-var recurring = new Recurring(DateTime.Now);
-var onceOccurence = new OnceOccurence(DateTime.Now);
-Console.WriteLine(DateTime.Now);
-while (true)
+var configData = new Config
 {
-    Console.WriteLine("\n ************************ Configuration Section ****************************");
-    Console.WriteLine("1. Recurring\n2. Once");
-    Console.WriteLine("Enter Configuration Choice from Menu");
-    var configChoice = Convert.ToInt32(Console.ReadLine());
+    ConfDateTime = new DateTime(2024, 5, 4, 3, 40, 5),
+    CurrentDate = DateTime.Now,
+    OccurenceType = "recurring",
+    OccursEvery = "monthly",
+    Days = 0,
+    StartDate = new DateOnly(2024, 3, 1)
+};
 
-    switch (configChoice)
-    {
-        case 1:
-            recurring.CalculateTime();
-            break;
-        case 2:
-            onceOccurence.CalculateTime();
-            break;
-        default:
-            Console.WriteLine("Wrong Choice");
-            break;
-    }
+Func<Config, Tuple<DateTime, string>> calculateNextDate = (Config p) => Tuple.Create(DateTime.Now, "Hello");
+// var compute = new Computation();
+var result = calculateNextDate(configData);
+Console.WriteLine($"Output\nNext Execution Date -> {result}");
 
-}
+
+
