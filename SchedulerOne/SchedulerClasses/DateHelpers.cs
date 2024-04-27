@@ -21,12 +21,3 @@ public class DateHelpers
         return Tuple.Create(hours, minutes);
     }
 }
-
-
-
-// Console.WriteLine(DateOnly.FromDateTime(DateTime.Now.AddDays(1)).GetType());
-// Console.WriteLine(DateTime.Today);
-// Console.WriteLine(DateTime.UtcNow);
-// TimeSpan nearlyTenDays = TimeSpan.;
-// Console.WriteLine(nearlyTenDays);
-// Console.WriteLine(DateTimeOffset.Now);
