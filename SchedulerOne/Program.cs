@@ -11,7 +11,10 @@ var configData = new Config
     StartDate = new DateOnly(2024, 3, 1)
 };
 
-var compute = new Computation();
-var result = compute.ComputeNextDate(configData);
+Func<Config, Tuple<DateTime, string>> calculateNextDate = (Config p) => Tuple.Create(DateTime.Now, "Hello");
+// var compute = new Computation();
+var result = calculateNextDate(configData);
 Console.WriteLine($"Output\nNext Execution Date -> {result}");
+
+
 
