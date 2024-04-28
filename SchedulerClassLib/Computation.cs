@@ -1,4 +1,4 @@
-namespace SchedulerOne;
+namespace SchedulerClassLib;
 
 public class Computation
 {

@@ -1,8 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SchedulerOne", "SchedulerOne\SchedulerOne.csproj", "{03BB989E-68BF-40ED-BD88-BA6E9095633D}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SchedulerTest", "SchedulerTest\SchedulerTest.csproj", "{072C8408-6E4F-4C60-84D7-EA8A1C6B5424}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SchedulerClassLib", "SchedulerClassLib\SchedulerClassLib.csproj", "{075CD540-106B-430D-B9BD-670C14A4ACB6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -10,13 +10,13 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{03BB989E-68BF-40ED-BD88-BA6E9095633D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{03BB989E-68BF-40ED-BD88-BA6E9095633D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{03BB989E-68BF-40ED-BD88-BA6E9095633D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{03BB989E-68BF-40ED-BD88-BA6E9095633D}.Release|Any CPU.Build.0 = Release|Any CPU
 		{072C8408-6E4F-4C60-84D7-EA8A1C6B5424}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{072C8408-6E4F-4C60-84D7-EA8A1C6B5424}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{072C8408-6E4F-4C60-84D7-EA8A1C6B5424}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{072C8408-6E4F-4C60-84D7-EA8A1C6B5424}.Release|Any CPU.Build.0 = Release|Any CPU
+		{075CD540-106B-430D-B9BD-670C14A4ACB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{075CD540-106B-430D-B9BD-670C14A4ACB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{075CD540-106B-430D-B9BD-670C14A4ACB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{075CD540-106B-430D-B9BD-670C14A4ACB6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
